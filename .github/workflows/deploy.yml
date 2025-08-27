@@ -1,12 +1,7 @@
 name: Deploy to GitHub Pages
-permissions:
-  contents: write
-
 on:
   push:
-    branches: [ master ]  # 修改为 master
-  pull_request:
-    branches: [ master ]  # 修改为 master
+    branches: [ master ] # 你的主分支是 master
 
 jobs:
   build:
@@ -24,16 +19,19 @@ jobs:
         cache-dependency-path: next-app/package-lock.json
 
     - name: Install dependencies
-      run: npm ci
       working-directory: ./next-app
+      run: npm ci
 
     - name: Build static site
-      run: npm run build
       working-directory: ./next-app
+      run: npm run build
 
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
-      if: github.ref == 'refs/heads/master'  # 修改为 master
+      if: github.ref == 'refs/heads/master'
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
+        # 1. 确保部署目录正确
         publish_dir: ./next-app/out
+        # 2. 确保自动创建 .nojekyll 文件
+        no_jekyll: true
