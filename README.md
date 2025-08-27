@@ -47,6 +47,11 @@ jams_next_study/
 - [JAMstack 官方网站](https://jamstack.org/)
 - [GitHub Actions 文档](https://docs.github.com/en/actions)
 
+
+# Setting for pages after action
+- Goto Settings-> pages set the source = deploy from branch , branch = gh-pages, generate by the Actions
+- The site is at {username}.github.io/{project-name}
+
 ## 许可证
 
 MIT License
