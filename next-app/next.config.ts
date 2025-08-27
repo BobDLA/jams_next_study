@@ -7,6 +7,9 @@
     images: {
       unoptimized: true,
     },
+    // GitHub Pages 子目录部署配置
+    basePath: '/jams_next_study',
+    assetPrefix: '/jams_next_study',
     // 保留之前的配置
     allowedDevOrigins: ['http://localhost:3000', 'http://127.0.0.1:3000'],
   };
