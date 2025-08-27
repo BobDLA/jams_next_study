@@ -51,7 +51,8 @@ jams_next_study/
 # Setting for pages after action
 - Goto Settings-> pages set the source = deploy from branch , branch = gh-pages, generate by the Actions
 - The site is at {username}.github.io/{project-name}
+- be careful about the deploy.yml setting and next.config.ts setting.
 
-## 许可证
+## 许可证d
 
 MIT License
