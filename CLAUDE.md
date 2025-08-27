@@ -39,3 +39,9 @@ This project follows a step-by-step learning approach:
 - Git commits should be made frequently to track progress
 - Questions and answers should be recorded in the documentation
 - Focus on creating a minimal viable project that demonstrates the full workflow
+
+# important:
+
+- CLAUDE give the detail command and operation for each step. And the operation should be done by customer if not additional request. I will prompt to ask if the command has been executed successfully or not and then wait customer's input. And I will check if it's correct or not. and give next step.
+
+- collect and write the report for each round talk with customer, record all the information for the finnaly restructure it. 
