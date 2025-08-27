@@ -13,9 +13,9 @@ const nextConfig: NextConfig = {
 
   // 关键配置：仅在生产环境（部署到 GitHub Pages 时）添加路径前缀
   // basePath 用于为页面路由添加前缀（例如 /about -> /your-repository-name/about）
-  basePath: isProd ? `/${repositoryName}` : '',
+  //basePath: isProd ? `/${repositoryName}` : '',
   // assetPrefix 用于为所有静态资源（JS, CSS, 图片等）添加前缀
-  assetPrefix: isProd ? `/${repositoryName}/` : '',
+  //assetPrefix: isProd ? `/${repositoryName}/` : '',
 
   // 您的其他现有配置
   trailingSlash: true,
