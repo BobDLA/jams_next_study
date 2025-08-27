@@ -19,16 +19,19 @@ jobs:
       with:
         node-version: '18'
         cache: 'npm'
+        cache-dependency-path: next-app/package-lock.json
 
     - name: Install dependencies
       run: npm ci
+      working-directory: ./next-app
 
     - name: Build static site
       run: npm run build
+      working-directory: ./next-app
 
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
       if: github.ref == 'refs/heads/main'
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./out
+        publish_dir: ./next-app/out
