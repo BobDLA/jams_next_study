@@ -60,8 +60,6 @@ jams_next_study/
 │       └── deploy.yml              # Deployment workflow
 ├── 🔧 Support Files
 │   ├── test-workflow.sh            # Workflow testing script
-│   ├── LEARNING_MANUAL.md          # Symbolic link → docs/LEARNING_MANUAL_EN.md
-│   ├── LEARNING_QA.md              # Symbolic link → docs/LEARNING_QA_EN.md
 │   ├── .gitignore                  # Git ignore rules (root level)
 │   └── next-app/.gitignore         # Next.js specific ignore rules
 └── 📚 Bilingual Support

@@ -1,1 +1,0 @@
-docs/LEARNING_MANUAL_EN.md
