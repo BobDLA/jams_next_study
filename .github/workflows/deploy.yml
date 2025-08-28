@@ -1,7 +1,7 @@
 name: Deploy to GitHub Pages
 on:
   push:
-    branches: [ master ] # 你的主分支是 master
+    branches: [ master ] # Your main branch is master
 
 jobs:
   build:
@@ -31,7 +31,7 @@ jobs:
       if: github.ref == 'refs/heads/master'
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        # 1. 确保部署目录正确
+        # 1. Ensure deployment directory is correct
         publish_dir: ./next-app/out
-        # 2. 确保自动创建 .nojekyll 文件
+        # 2. Ensure automatic creation of .nojekyll file
         no_jekyll: true

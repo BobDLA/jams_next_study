@@ -2,17 +2,17 @@ import type { NextConfig } from "next";
 
 const isProd = process.env.NODE_ENV === 'production';
 
-// 仓库名称，请确保和你的 GitHub 仓库名称完全一致
+// Repository name, ensure it matches your GitHub repository name exactly
 const repositoryName = 'jams_next_study';
 
 const nextConfig: NextConfig = {
   output: 'export',
 
-  // 确保 basePath 和 assetPrefix 已正确配置
+  // Ensure basePath and assetPrefix are correctly configured
   basePath: isProd ? `/${repositoryName}` : '',
   assetPrefix: isProd ? `/${repositoryName}/` : '',
 
-  // 你的其他配置
+  // Your other configuration
   trailingSlash: true,
   images: {
     unoptimized: true,

@@ -6,8 +6,8 @@ import React from 'react';
   }
 
   const Header: React.FC<HeaderProps> = ({ 
-    title = "Next.js 学习项目", 
-    subtitle = "JAMstack 静态站点开发" 
+    title = "Next.js Learning Project", 
+    subtitle = "JAMstack Static Site Development" 
   }) => {
     return (
       <header className="text-center py-12 bg-gradient-to-r from-blue-600 to-purple-600 
@@ -23,7 +23,7 @@ import React from 'react';
             <div className="inline-flex items-center space-x-2 bg-white/20 backdrop-blur-sm 
   rounded-full px-6 py-3">
               <span className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></span>
-              <span className="text-sm font-medium">开发中</span>
+              <span className="text-sm font-medium">In Development</span>
             </div>
           </div>
         </div>

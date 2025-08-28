@@ -1,21 +1,24 @@
 import React from 'react';
 
-  interface NavItem {
-    label: string;
-    href: string;
-  }
+// Navigation item interface
+interface NavItem {
+  label: string;
+  href: string;
+}
 
-  interface NavigationProps {
-    items?: NavItem[];
-  }
+// Navigation component props interface
+interface NavigationProps {
+  items?: NavItem[];
+}
 
-  const Navigation: React.FC<NavigationProps> = ({ 
-    items = [
-      { label: '首页', href: '/' },
-      { label: '关于', href: '/about' },
-      { label: '项目', href: '/projects' },
-      { label: '联系', href: '/contact' }
-    ]
+// Navigation component with sticky header and responsive menu
+const Navigation: React.FC<NavigationProps> = ({ 
+  items = [
+    { label: 'Home', href: '/' },
+    { label: 'About', href: '/about' },
+    { label: 'Projects', href: '/projects' },
+    { label: 'Contact', href: '/contact' }
+  ]
   }) => {
     return (
       <nav className="sticky top-0 z-50 bg-white shadow-sm border-b">
@@ -41,7 +44,7 @@ import React from 'react';
             <div className="flex items-center space-x-4">
               <button className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700
    transition-colors duration-200">
-                开始使用
+                Get Started
               </button>
             </div>
           </div>
