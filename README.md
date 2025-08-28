@@ -90,7 +90,7 @@ jams_next_study/
 
 ## 🌐 Live Demo
 
-**GitHub Pages URL**: `https://your-username.github.io/jams_next_study/`
+**GitHub Pages URL**: `https://bobdla.github.io/jams_next_study/`
 
 The project is deployment-ready and will be automatically deployed when pushed to GitHub.
 
