@@ -29,6 +29,7 @@ jams_next_study/
 │   ├── README.md                    # Project overview (this file)
 │   ├── CLAUDE.md                   # Claude Code guidance file
 │   └── docs/                       # Organized documentation directory
+│       ├── study.md                    # Original learning objectives
 │       ├── WORK_PLAN.md            # Detailed work plan
 │       ├── LEARNING_MANUAL_EN.md   # English learning guide
 │       ├── LEARNING_QA_EN.md       # English Q&A collection
@@ -58,7 +59,6 @@ jams_next_study/
 │   └── .github/workflows/
 │       └── deploy.yml              # Deployment workflow
 ├── 🔧 Support Files
-│   ├── study.md                    # Original learning objectives
 │   ├── test-workflow.sh            # Workflow testing script
 │   ├── LEARNING_MANUAL.md          # Symbolic link → docs/LEARNING_MANUAL_EN.md
 │   ├── LEARNING_QA.md              # Symbolic link → docs/LEARNING_QA_EN.md
