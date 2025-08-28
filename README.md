@@ -25,32 +25,49 @@ This is a comprehensive learning project for Next.js, React, JAMstack static sit
 
 ```
 jams_next_study/
-├── 📄 Documentation
+├── 📄 Documentation (Root Level)
 │   ├── README.md                    # Project overview (this file)
 │   ├── WORK_PLAN.md                # Detailed work plan
-│   ├── LEARNING_MANUAL.md          # Step-by-step learning guide
-│   ├── LEARNING_QA.md              # Q&A collection
+│   ├── LEARNING_MANUAL.md          # Step-by-step learning guide (→ LEARNING_MANUAL_EN.md)
+│   ├── LEARNING_QA.md              # Q&A collection (→ LEARNING_QA_EN.md)
 │   ├── DEPLOYMENT_GUIDE.md         # Deployment instructions
 │   └── CLAUDE.md                   # Claude Code guidance file
 ├── 🚀 Next.js Application
-│   ├── next-app/                   # Next.js project directory
-│   │   ├── src/
-│   │   │   ├── app/                # App Router pages
-│   │   │   └── components/         # React components
-│   │   ├── next.config.ts          # Next.js configuration
-│   │   ├── tailwind.config.js      # Tailwind CSS configuration
-│   │   └── package.json            # Dependencies and scripts
-│   └── .github/workflows/          # GitHub Actions workflows
+│   └── next-app/                   # Next.js project directory
+│       ├── src/
+│       │   ├── app/                # App Router pages
+│       │   │   ├── layout.tsx      # Root layout
+│       │   │   ├── page.tsx        # Home page
+│       │   │   └── globals.css     # Global styles
+│       │   └── components/         # React components
+│       │       ├── Header.tsx      # Page header
+│       │       ├── Navigation.tsx  # Navigation menu
+│       │       └── Footer.tsx      # Page footer
+│       ├── next.config.ts          # Next.js configuration
+│       ├── tailwind.config.js      # Tailwind CSS configuration
+│       ├── tsconfig.json           # TypeScript configuration
+│       ├── package.json            # Dependencies and scripts
+│       ├── postcss.config.mjs      # PostCSS configuration
+│       ├── eslint.config.mjs       # ESLint configuration
+│       └── out/                    # Static export output
+├── 🤖 GitHub Actions (Root Level - Required for CI/CD)
+│   └── .github/workflows/
 │       └── deploy.yml              # Deployment workflow
 ├── 🔧 Support Files
 │   ├── study.md                    # Original learning objectives
 │   ├── test-workflow.sh            # Workflow testing script
-│   └── .gitignore                  # Git ignore rules
+│   ├── .gitignore                  # Git ignore rules (root level)
+│   └── next-app/.gitignore         # Next.js specific ignore rules
 └── 📚 Chinese Versions (Reference)
     ├── WORK_PLAN_CN.md
     ├── LEARNING_MANUAL_CN.md
     └── LEARNING_QA_CN.md
 ```
+
+**Important Notes:**
+- **GitHub Actions**: Workflows must be at repository root level for proper CI/CD functionality
+- **Documentation**: `LEARNING_MANUAL.md` and `LEARNING_QA.md` are symbolic links to `_EN.md` versions
+- **Build Output**: `next-app/out/` contains the static export for GitHub Pages deployment
 
 ## Development Progress
 
