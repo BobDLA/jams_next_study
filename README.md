@@ -25,13 +25,17 @@ This is a comprehensive learning project for Next.js, React, JAMstack static sit
 
 ```
 jams_next_study/
-├── 📄 Documentation (Root Level)
+├── 📖 Core Documentation
 │   ├── README.md                    # Project overview (this file)
-│   ├── WORK_PLAN.md                # Detailed work plan
-│   ├── LEARNING_MANUAL.md          # Step-by-step learning guide (→ LEARNING_MANUAL_EN.md)
-│   ├── LEARNING_QA.md              # Q&A collection (→ LEARNING_QA_EN.md)
-│   ├── DEPLOYMENT_GUIDE.md         # Deployment instructions
-│   └── CLAUDE.md                   # Claude Code guidance file
+│   ├── CLAUDE.md                   # Claude Code guidance file
+│   └── docs/                       # Organized documentation directory
+│       ├── WORK_PLAN.md            # Detailed work plan
+│       ├── LEARNING_MANUAL_EN.md   # English learning guide
+│       ├── LEARNING_QA_EN.md       # English Q&A collection
+│       ├── DEPLOYMENT_GUIDE.md     # Deployment instructions
+│       ├── WORK_PLAN_CN.md         # Chinese work plan (reference)
+│       ├── LEARNING_MANUAL_CN.md   # Chinese learning guide (reference)
+│       └── LEARNING_QA_CN.md       # Chinese Q&A (reference)
 ├── 🚀 Next.js Application
 │   └── next-app/                   # Next.js project directory
 │       ├── src/
@@ -56,18 +60,20 @@ jams_next_study/
 ├── 🔧 Support Files
 │   ├── study.md                    # Original learning objectives
 │   ├── test-workflow.sh            # Workflow testing script
+│   ├── LEARNING_MANUAL.md          # Symbolic link → docs/LEARNING_MANUAL_EN.md
+│   ├── LEARNING_QA.md              # Symbolic link → docs/LEARNING_QA_EN.md
 │   ├── .gitignore                  # Git ignore rules (root level)
 │   └── next-app/.gitignore         # Next.js specific ignore rules
-└── 📚 Chinese Versions (Reference)
-    ├── WORK_PLAN_CN.md
-    ├── LEARNING_MANUAL_CN.md
-    └── LEARNING_QA_CN.md
+└── 📚 Bilingual Support
+    └── docs/                       # All Chinese versions in docs/ directory
 ```
 
 **Important Notes:**
 - **GitHub Actions**: Workflows must be at repository root level for proper CI/CD functionality
-- **Documentation**: `LEARNING_MANUAL.md` and `LEARNING_QA.md` are symbolic links to `_EN.md` versions
+- **Documentation Organization**: All documentation files (except README.md and CLAUDE.md) are organized in `docs/` directory
+- **Symbolic Links**: `LEARNING_MANUAL.md` and `LEARNING_QA.md` at root level link to files in `docs/` for convenience
 - **Build Output**: `next-app/out/` contains the static export for GitHub Pages deployment
+- **Clean Root**: Only essential files remain at root level for better organization
 
 ## Development Progress
 
